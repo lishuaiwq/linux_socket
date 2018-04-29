@@ -70,6 +70,7 @@ int main()
 		  n=read(sockfd,buf,sizeof(buf));
 		  if(n==0) 
 		  {
+				  sleep(10); 
 				close(sockfd);  
 		      FD_CLR(sockfd,&allset); 
 			  client[i]=-1; 		  

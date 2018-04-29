@@ -13,6 +13,9 @@
 #include <sys/time.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include<string.h>
+#include<poll.h>
+#include<sys/epoll.h>
 extern int errno;
 int Socket(int domain,int type,int protocol);
 int Bind(int sockfd,const struct sockaddr* addr,socklen_t addrlen);

@@ -1,12 +1,13 @@
 #include"head.h"
 
-#define CLIENT_IP "192.168.240.129"
+#define CLIENT_IP "192.168.240.130"
 #define CLIENT_PROT 9526
 int main()
 {
 	 struct sockaddr_in caddr;
 	 caddr.sin_family=AF_INET;
-	 caddr.sin_port=htons(CLIENT_PROT); 
+	 caddr.sin_port= htons(CLIENT_PROT); 
+	 //icaddr.sin_addr.s_addr=INADDR_ANY;
 	 inet_pton(AF_INET,CLIENT_IP,(void*)&caddr.sin_addr.s_addr);
      int cfd=Socket(AF_INET,SOCK_STREAM,0);
      Connect(cfd,(void*)&caddr,sizeof(caddr));  
