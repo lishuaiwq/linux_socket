@@ -1,6 +1,5 @@
 #include"head.h"
-
-#define CLIENT_IP "192.168.240.130"
+#define CLIENT_IP "192.168.1.106"
 #define CLIENT_PROT 9526
 int main()
 {

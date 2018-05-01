@@ -1,5 +1,5 @@
 #include"head.h"
-#define SERVE_IP "192.168.240.129"
+#define SERVE_IP "192.168.1.106"
 #define SERVE_PORT 9526
 
 struct sin
