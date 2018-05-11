@@ -7,7 +7,7 @@ int main()
   int listenfd= Socket(AF_INET,SOCK_DGRAM,0);
   client.sin_family=AF_INET;
   client.sin_port=htons(PROT);
-  inet_pton(AF_INET,"192.168.240.130",&client.sin_addr.s_addr); 
+  inet_pton(AF_INET,"0.0.0.0",&client.sin_addr.s_addr); 
   while(1)
   {
      int nn=read(STDIN_FILENO,buf,sizeof(buf)); 

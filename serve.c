@@ -1,5 +1,5 @@
 #include"head.h"
-#define SERVE_IP "192.168.240.129"
+//#define SERVE_IP "192.168.3.169"
 #define SERVE_PORT 9526
 
 int main()
@@ -7,7 +7,7 @@ int main()
 	struct sockaddr_in addr,c_addr;
 	addr.sin_family=AF_INET;
 	addr.sin_port=htons(SERVE_PORT);
-	addr.sin_addr.s_addr=INADDR_ANY;
+	addr.sin_addr.s_addr=htonl(INADDR_ANY);
 	//inet_pton(AF_INET,SERVE_IP,(void *)&addr.sin_addr.s_addr);
     int sfd=Socket(AF_INET,SOCK_STREAM,0);//    
     Bind(sfd,(struct sockaddr*)&addr,sizeof(addr));

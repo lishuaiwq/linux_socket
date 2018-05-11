@@ -1,6 +1,6 @@
 #include"head.h"
 
-#define SERVE_IP "192.168.240.130"
+#define SERVE_IP "192.168.3.169"
 
 #define PROT 9526
 int main()
